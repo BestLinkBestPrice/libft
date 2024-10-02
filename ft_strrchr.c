@@ -1,27 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nbonnet <nbonnet@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/02 15:52:45 by nbonnet           #+#    #+#             */
-/*   Updated: 2024/10/02 18:33:18 by nbonnet          ###   ########.fr       */
+/*   Created: 2024/10/02 17:17:09 by nbonnet           #+#    #+#             */
+/*   Updated: 2024/10/02 18:35:05 by nbonnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
 	i = 0;
 	while (s[i] != '\0')
 	{
+		i++;
+	}
+	while (s[i] >= 0)
+	{
 		if (s[i] == (char)c)
 		{
 			return ((char *)(s + i));
 		}
-		i++;
+		i--;
 	}
 	return (0);
 }
+/*
+#include <stdio.h>
+#include <string.h>
+int	main(void)
+{
+	const char s[] = "";
+	int	c = 108;
+
+	char *ptr1 = ft_strrchr(s, c);
+	char *ptr2 = strrchr(s, c);
+
+	printf("%s\n", ptr1);
+	printf("%s\n", ptr2);
+	return 0;
+
+}
+*/
