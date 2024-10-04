@@ -6,11 +6,11 @@
 /*   By: nbonnet <nbonnet@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 14:42:25 by nbonnet           #+#    #+#             */
-/*   Updated: 2024/10/03 15:35:57 by nbonnet          ###   ########.fr       */
+/*   Updated: 2024/10/04 14:52:22 by nbonnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {

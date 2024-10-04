@@ -6,9 +6,11 @@
 /*   By: nbonnet <nbonnet@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 15:52:45 by nbonnet           #+#    #+#             */
-/*   Updated: 2024/10/02 18:33:18 by nbonnet          ###   ########.fr       */
+/*   Updated: 2024/10/04 13:47:29 by nbonnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

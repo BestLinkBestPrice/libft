@@ -6,11 +6,11 @@
 /*   By: nbonnet <nbonnet@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 14:09:24 by nbonnet           #+#    #+#             */
-/*   Updated: 2024/10/03 14:44:35 by nbonnet          ###   ########.fr       */
+/*   Updated: 2024/10/04 16:11:21 by nbonnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -21,9 +21,9 @@ void	*ft_calloc(size_t count, size_t size)
 	ptr = malloc(size * count);
 	if (!ptr)
 		return (0);
-	while (i < count)
+	while (i < count * size)
 	{
-		((char *)ptr)[i] = '\0';
+		((unsigned char *)ptr)[i] = '\0';
 		i++;
 	}
 	return (ptr);

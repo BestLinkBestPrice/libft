@@ -6,9 +6,11 @@
 /*   By: nbonnet <nbonnet@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 12:27:45 by nbonnet           #+#    #+#             */
-/*   Updated: 2024/10/03 13:37:58 by nbonnet          ###   ########.fr       */
+/*   Updated: 2024/10/04 13:47:47 by nbonnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

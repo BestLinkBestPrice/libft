@@ -6,9 +6,11 @@
 /*   By: nbonnet <nbonnet@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 13:18:27 by nbonnet           #+#    #+#             */
-/*   Updated: 2024/10/01 13:22:30 by nbonnet          ###   ########.fr       */
+/*   Updated: 2024/10/04 13:47:04 by nbonnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(const char *s)
 {

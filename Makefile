@@ -6,7 +6,7 @@
 #    By: nbonnet <nbonnet@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/03 15:51:10 by nbonnet           #+#    #+#              #
-#    Updated: 2024/10/03 16:28:26 by nbonnet          ###   ########.fr        #
+#    Updated: 2024/10/04 14:46:04 by nbonnet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,14 +18,24 @@ SRCS = ft_isalpha.c ft_memcmp.c ft_strdup.c ft_strnstr.c ft_atoi.c ft_isascii.c 
 
 OBJS = $(SRCS:.c=.o)
 
+HEADER = libft.h
+
 NAME = libft.a
 
-.c.o:
-	$(CC) $(CFLAGS) -c -I libft.h $< -o $(<:.c=.o)
+all: $(NAME)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
-	ar $(NAME) $(OBJS)
-	ranlib $(NAME)
+	ar rcs $(NAME) $(OBJS)
 
+clean:
+	rm -rf *.o
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
 
 .PHONY: all clean fclean re

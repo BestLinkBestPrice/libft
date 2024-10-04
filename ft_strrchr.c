@@ -6,20 +6,24 @@
 /*   By: nbonnet <nbonnet@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 17:17:09 by nbonnet           #+#    #+#             */
-/*   Updated: 2024/10/02 18:35:05 by nbonnet          ###   ########.fr       */
+/*   Updated: 2024/10/04 16:19:09 by nbonnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
 	i = 0;
+	if (s[i] == '\0')
+		return (0);
 	while (s[i] != '\0')
 	{
 		i++;
 	}
-	while (s[i] >= 0)
+	while (i >= 0)
 	{
 		if (s[i] == (char)c)
 		{
@@ -33,7 +37,7 @@ char	*ft_strrchr(const char *s, int c)
 #include <stdio.h>
 #include <string.h>
 int	main(void)
-{
+{s
 	const char s[] = "";
 	int	c = 108;
 

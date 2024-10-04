@@ -6,11 +6,13 @@
 /*   By: nbonnet <nbonnet@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 15:49:57 by nbonnet           #+#    #+#             */
-/*   Updated: 2024/10/02 15:50:22 by nbonnet          ###   ########.fr       */
+/*   Updated: 2024/10/04 13:48:47 by nbonnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
+#include "libft.h"
+
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 	{
