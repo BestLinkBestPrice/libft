@@ -42,11 +42,12 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 }
 /*
 #include <stdio.h>
+#include <string.h>
 int	main(void)
 {
-	const char	haystack[] = "abcabcabc";
-	const char	needle[] = "abc";
-	size_t	len = 6;
+	const char	haystack[] = "haystack";
+	const char	needle[] = "needle";
+	size_t	len = -1;
 
 	char *result = ft_strnstr(haystack, needle, len);
 	char *result1 = strnstr(haystack, needle, len);

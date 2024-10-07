@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbonnet <nbonnet@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: nopauli <nopauli@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:14:22 by nbonnet           #+#    #+#             */
-/*   Updated: 2024/10/04 14:57:14 by nbonnet          ###   ########.fr       */
+/*   Updated: 2024/10/07 23:11:48 by nopauli          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ int		ft_strlen(const char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_strchr(const char *s, int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+char	*ft_itoa(int n);
 #endif
